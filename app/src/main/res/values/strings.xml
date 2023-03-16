@@ -1,3 +1,183 @@
 <resources>
-    <string name="app_name">Restoly Manager</string>
+    <string name="app_name">Restoly</string>
+    <string name="app_version">1.0.0</string>
+    <string name="app_author">Restoly</string>
+    <string name="app_email">mail@restoly.ma</string>
+    <string name="app_website">https://restoly.ma</string>
+    <string name="app_description">Restoly is a restaurant directory app that helps you find the best restaurants around you.</string>
+
+    <string name="app_license">Apache License 2.0</string>
+    <string name="app_license_url">http://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="app_privacy_policy">https://restoly.ma/privacy-policy</string>
+    <string name="app_terms_of_service">https://restoly.ma/terms-of-service</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_help">Help</string>
+
+    <string name="action_logout">Logout</string>
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+    <string name="action_forgot_password">Forgot Password</string>
+    <string name="action_reset_password">Reset Password</string>
+    <string name="action_change_password">Change Password</string>
+    <string name="action_change_email">Change Email</string>
+    <string name="action_change_phone">Change Phone</string>
+    <string name="action_change_name">Change Name</string>
+    <string name="action_change_address">Change Address</string>
+    <string name="action_change_location">Change Location</string>
+    <string name="action_change_language">Change Language</string>
+    <string name="action_change_theme">Change Theme</string>
+    <string name="action_change_currency">Change Currency</string>
+    <string name="action_change_unit">Change Unit</string>
+    <string name="action_change_timezone">Change Timezone</string>
+    <string name="action_change_date_format">Change Date Format</string>
+    <string name="action_change_time_format">Change Time Format</string>
+    <string name="action_change_datetime_format">Change Datetime Format</string>
+    <string name="action_change_number_format">Change Number Format</string>
+    <string name="action_change_decimal_format">Change Decimal Format</string>
+    <string name="action_change_currency_format">Change Currency Format</string>
+
+    <string name="action_profile">Profile</string>
+    <string name="action_account">Account</string>
+    <string name="action_language">Language</string>
+    <string name="action_theme">Theme</string>
+    <string name="action_currency">Currency</string>
+
+
+    <string name="action_search">Search</string>
+    <string name="action_add">Add</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_close">Close</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_share">Share</string>
+    <string name="action_send">Send</string>
+
+    <string name="action_continue_with_facebook">Continue with Facebook</string>
+    <string name="action_continue_with_google">Continue with Google</string>
+    <string name="action_continue_with_twitter">Continue with Twitter</string>
+    <string name="action_continue_with_github">Continue with Github</string>
+    <string name="action_continue_with_linkedin">Continue with Linkedin</string>
+    <string name="action_continue_with_instagram">Continue with Instagram</string>
+    <string name="action_continue_with_yahoo">Continue with Yahoo</string>
+    <string name="action_continue_with_microsoft">Continue with Microsoft</string>
+    <string name="action_continue_with_apple">Continue with Apple</string>
+    <string name="action_continue_with_email">Continue with Email</string>
+
+    <string name="label_wait">Please wait...</string>
+
+    <string name="action_select_image">Select Image</string>
+    <string name="action_select_images">Select Images</string>
+    <string name="action_select_file">Select File</string>
+    <string name="action_select_files">Select Files</string>
+    <string name="action_select_video">Select Video</string>
+    <string name="action_select_videos">Select Videos</string>
+    <string name="action_select_audio">Select Audio</string>
+    <string name="action_select_audios">Select Audios</string>
+    <string name="action_select_location">Select Location</string>
+    <string name="action_select_date">Select Date</string>
+    <string name="action_select_time">Select Time</string>
+    <string name="action_select_datetime">Select Date &amp; Time</string>
+    <string name="action_select_color">Select Color</string>
+
+    <string name="action_view">View</string>
+    <string name="action_view_all">View All</string>
+    <string name="action_view_more">View More</string>
+    <string name="action_view_less">View Less</string>
+
+    <string name="message_no_data">No data available</string>
+    <string name="message_no_internet">No internet connection</string>
+    <string name="message_no_location">No location available</string>
+    <string name="message_no_permission">No permission available</string>
+    <string name="message_no_result">No result found</string>
+    <string name="message_no_user">No user found</string>
+    <string name="message_no_item">No item found</string>
+
+    <string name="notification_title">Restoly</string>
+    <string name="notification_message">You have a new notification</string>
+
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_confirm_password">Confirm Password</string>
+    <string name="label_name">Name</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_address">Address</string>
+    <string name="label_location">Location</string>
+
+    <string name="label_restaurant">Restaurant</string>
+    <string name="label_restaurants">Restaurants</string>
+    <string name="label_restaurant_name">Restaurant Name</string>
+    <string name="label_restaurant_address">Restaurant Address</string>
+    <string name="label_restaurant_phone">Restaurant Phone</string>
+    <string name="label_restaurant_website">Restaurant Website</string>
+    <string name="label_restaurant_description">Restaurant Description</string>
+    <string name="label_restaurant_opening_hours">Restaurant Opening Hours</string>
+    <string name="label_restaurant_closing_hours">Restaurant Closing Hours</string>
+    <string name="label_restaurant_opening_days">Restaurant Opening Days</string>
+    <string name="label_restaurant_closing_days">Restaurant Closing Days</string>
+    <string name="label_restaurant_opening_time">Restaurant Opening Time</string>
+    <string name="label_restaurant_closing_time">Restaurant Closing Time</string>
+    <string name="label_restaurant_opening_day">Restaurant Opening Day</string>
+    <string name="label_restaurant_closing_day">Restaurant Closing Day</string>
+    <string name="label_restaurant_opening_date">Restaurant Opening Date</string>
+    <string name="label_restaurant_closing_date">Restaurant Closing Date</string>
+    <string name="label_restaurant_opening_month">Restaurant Opening Month</string>
+    <string name="label_restaurant_closing_month">Restaurant Closing Month</string>
+    <string name="label_restaurant_opening_year">Restaurant Opening Year</string>
+    <string name="label_restaurant_closing_year">Restaurant Closing Year</string>
+
+    <string name="label_restaurant_menu">Restaurant Menu</string>
+    <string name="label_restaurant_menus">Restaurant Menus</string>
+    <string name="label_restaurant_menu_name">Restaurant Menu Name</string>
+    <string name="label_restaurant_menu_description">Restaurant Menu Description</string>
+    <string name="label_restaurant_menu_price">Restaurant Menu Price</string>
+    <string name="label_restaurant_menu_image">Restaurant Menu Image</string>
+
+    <string name="label_restaurant_review">Restaurant Review</string>
+    <string name="label_restaurant_reviews">Restaurant Reviews</string>
+    <string name="label_restaurant_review_rating">Restaurant Review Rating</string>
+    <string name="label_restaurant_review_comment">Restaurant Review Comment</string>
+
+    <string name="label_restaurant_image">Restaurant Image</string>
+    <string name="label_restaurant_images">Restaurant Images</string>
+
+    <string name="label_restaurant_category">Restaurant Category</string>
+    <string name="label_restaurant_categories">Restaurant Categories</string>
+    <string name="label_restaurant_category_name">Restaurant Category Name</string>
+    <string name="label_restaurant_category_description">Restaurant Category Description</string>
+
+    <string name="label_restaurant_subcategory">Restaurant Subcategory</string>
+    <string name="label_restaurant_subcategories">Restaurant Subcategories</string>
+    <string name="label_restaurant_subcategory_name">Restaurant Subcategory Name</string>
+
+    <string name="label_restaurant_type">Restaurant Type</string>
+    <string name="label_restaurant_types">Restaurant Types</string>
+    <string name="label_restaurant_type_name">Restaurant Type Name</string>
+
+    <string name="label_restaurant_cuisine">Restaurant Cuisine</string>
+    <string name="label_restaurant_cuisines">Restaurant Cuisines</string>
+    <string name="label_restaurant_cuisine_name">Restaurant Cuisine Name</string>
+
+    <string name="label_restaurant_facility">Restaurant Facility</string>
+    <string name="label_restaurant_facilities">Restaurant Facilities</string>
+    <string name="label_restaurant_facility_name">Restaurant Facility Name</string>
+
+    <string name="label_restaurant_payment">Restaurant Payment</string>
+    <string name="label_restaurant_payments">Restaurant Payments</string>
+    <string name="label_restaurant_payment_name">Restaurant Payment Name</string>
+
+    <string name="label_restaurant_feature">Restaurant Feature</string>
+    <string name="label_restaurant_features">Restaurant Features</string>
+    <string name="label_restaurant_feature_name">Restaurant Feature Name</string>
+
+    <string name="label_copyright">Copyright</string>
+    <string name="label_version">Version</string>
+    <string name="label_agree_to_terms">
+        by  continuing you agree to our <a href="https://www.restoly.com/terms">Terms of Service</a> and <a href="https://www.restoly.com/privacy">Privacy Policy</a>
+    </string>
+
+
 </resources>
