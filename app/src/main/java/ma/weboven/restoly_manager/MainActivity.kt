@@ -27,41 +27,54 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-
-            val navController = rememberNavController()
-            NavHost(navController = navController, startDestination = Screen.SplashScreen.route) {
-
-                // splash screen
-                composable(Screen.SplashScreen.route) { SplashScreen(navController = navController) }
-                composable(Screen.OnBoardingScreen.route) { OnBoardingScreen(navController = navController) }
-
-                // when the user is not connected
-                composable(Screen.LoginScreen.route) { LoginScreen(navController=navController) }
-                composable(Screen.RegisterScreen.route) { RegisterScreen(navController=navController) }
-                composable(Screen.ForgotPasswordScreen.route) { ForgotPasswordScreen(navController = navController) }
-
-                // when the user is connected
-                composable(Screen.FirstVisitScreen.route) { FirstVisitScreen(navController =navController) }
-                composable(Screen.AddRestaurantScreen.route) { AddRestaurantScreen(navController =navController) }
-
-            }
-
             RestolyManagerTheme {
+                val navController = rememberNavController()
+                NavHost(
+                    navController = navController, startDestination = Screen.SplashScreen.route
+                ) {
+
+                    // splash screen
+                    composable(Screen.SplashScreen.route) {
+                        SplashScreen(onComplete = {
+                            navController.navigate(Screen.OnBoardingScreen.route)
+
+
+                        })
+                    }
+                    composable(Screen.OnBoardingScreen.route) { OnBoardingScreen(navController = navController) }
+
+                    // when the user is not connected
+                    composable(Screen.LoginScreen.route) {
+                        LoginScreen(
+                            navController = navController,
+                            onLogin = { _, _ -> },
+                            onRegisterClicked = { navController.navigate(Screen.RegisterScreen.route) },
+                            //onForgotPasswordClicked = { navController.navigate(Screen.ForgotPasswordScreen.route) }
+                        )
+                    }
+                    composable(Screen.RegisterScreen.route) {
+
+                        RegisterScreen(navController = navController,
+                            onRegister = { _, _, _ -> },
+                            onLoginClicked = { navController.navigate(Screen.LoginScreen.route) }
+
+                        )
+                    }
+                    composable(Screen.ForgotPasswordScreen.route) {
+                        ForgotPasswordScreen(
+                            navController = navController
+                        )
+                    }
+
+                    // when the user is connected
+                    composable(Screen.FirstVisitScreen.route) { FirstVisitScreen(navController = navController) }
+                    composable(Screen.AddRestaurantScreen.route) { AddRestaurantScreen(navController = navController) }
+
+                }
+
 
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    RestolyManagerTheme {
-        Greeting("Android")
-    }
-}

@@ -20,6 +20,20 @@
     <string name="action_register">Register</string>
     <string name="action_forgot_password">Forgot Password</string>
     <string name="action_reset_password">Reset Password</string>
+
+
+    <string name="label_full_name">Full Name</string>
+    <string name="label_first_name">First Name</string>
+    <string name="label_last_name">Last Name</string>
+    <string name="label_already_have_account">Already have an account?</string>
+    <string name="label_dont_have_account">Don\'t have an account?</string>
+    <string name="label_or">or</string>
+    <string name="label_back">Back</string>
+
+    <string name="hide_password">Hide Password</string>
+    <string name="show_password">Show Password</string>
+
+
     <string name="action_change_password">Change Password</string>
     <string name="action_change_email">Change Email</string>
     <string name="action_change_phone">Change Phone</string>
