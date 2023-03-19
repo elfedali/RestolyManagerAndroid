@@ -2,6 +2,7 @@ package ma.weboven.restoly_manager
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -52,14 +53,7 @@ class MainActivity : ComponentActivity() {
                             //onForgotPasswordClicked = { navController.navigate(Screen.ForgotPasswordScreen.route) }
                         )
                     }
-                    composable(Screen.RegisterScreen.route) {
-
-                        RegisterScreen(navController = navController,
-                            onRegister = { _, _, _ -> },
-                            onLoginClicked = { navController.navigate(Screen.LoginScreen.route) }
-
-                        )
-                    }
+                    composable(Screen.RegisterScreen.route) { RegisterScreen(navController = navController) }
                     composable(Screen.ForgotPasswordScreen.route) {
                         ForgotPasswordScreen(
                             navController = navController
